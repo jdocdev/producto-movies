@@ -1,0 +1,52 @@
+@import url(/src/index.scss);
+
+.contacto-iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .iconos-contenedor {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        i {
+            margin-bottom: -10px;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 200;
+
+            span {
+                font-weight: 600;     
+                display: block;           
+            }
+        }
+    }
+
+    .iconos-separador {
+        font-size: 8px;
+        color: var(--rojo);
+        margin: 0 40px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    
+    .contacto-iconos {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        .iconos-contenedor {
+            margin: 20px;
+    
+        }
+    
+        .iconos-separador {
+            display: none;
+        }
+    }
+
+}

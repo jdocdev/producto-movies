@@ -1,0 +1,73 @@
+.carrusels-container {
+  display: flex;
+
+//   .carrusel-vertical {
+//     width: 20%;
+//     display: flex;
+//     flex-direction: column; /* Cambiado a columna para el carrusel vertical */
+//     position: relative;
+//     overflow: hidden; /* Para ocultar el exceso de imágenes */
+
+//     .vertical-img {
+//       position: relative;
+
+//       .img {
+//         width: 100%;
+//         max-height: calc(100% / 2); /* Ajusta según sea necesario */
+//         object-fit: cover; /* Puedes ajustar el ajuste de la imagen según tus necesidades */
+//       }
+//     }
+
+//     button {
+//       position: absolute;
+//       font-size: 24px;
+//       cursor: pointer;
+//       border: none;
+//       background-color: transparent;
+//       color: var(--azul);
+
+//       &.arriba {
+//         top: 0;
+//       }
+
+//       &.abajo {
+//         bottom: 0;
+//       }
+//     }
+//   }
+
+  .carrusel-horizontal {
+    width: 100%;
+    position: relative;
+
+    .horizontal-img {
+      position: relative;
+
+      .img {
+        width: 100%;
+        height: 100%;
+        max-height: 600px;
+        object-fit: contain;
+      }
+    }
+
+    button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      color: var(--azul);
+
+      &.izquierda {
+        left: 0;
+      }
+
+      &.derecha {
+        right: 0;
+      }
+    }
+  }
+}

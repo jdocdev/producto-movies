@@ -1,0 +1,83 @@
+@import url(/src/index.scss);
+
+.contanedor-detalles {
+
+    .detalles-form {
+        display: flex;
+        flex-direction: column;
+
+        border-bottom: 1px solid var(--gris-medio);
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+
+        .form-title {
+            font-size: 18px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+
+            .form-opciones {
+                border: solid 1px var(--gris);
+                background-color: transparent;
+                padding: 10px;
+                font-size: 16px;
+                font-weight: 100;
+                color: var(--gris);
+                margin-bottom: 10px;
+            }
+        }
+
+        .form-button {
+            border: solid 1px var(--gris-azulado);
+            padding: 10px;
+            font-size: 14px;
+            font-weight: 800;
+            background-color: var(--gris-medio);
+            cursor: pointer;
+        }
+    }
+
+    .detalles-favoritos {
+
+        border-bottom: 1px solid var(--gris-medio);
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+
+        p {
+            font-size: 14px;
+            font-weight: 200;
+
+            span i {
+                margin-right: 10px;
+            }
+
+            span i:hover {
+                color: var(--rojo);
+            }
+        }
+    }
+
+    .detalles-credifin {
+        display: flex;
+        align-items: center;
+
+        img {
+            background-color: var(--rojo);
+            height: 20px;
+            padding: 7px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 200;
+
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+}

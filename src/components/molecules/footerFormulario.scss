@@ -1,0 +1,161 @@
+@import url(/src/index.scss);
+
+.contenedor-formulario {
+    background-color: var(--azul-orcuro);
+    max-width: 900px;
+    padding: 25px 50px;
+    margin: 15px auto;
+
+    .formulario-titulo {
+        text-align: center;
+        font-size: 24px;
+        color: var(--blanco);
+    }
+
+    .formulario-subtitulo {
+        color: var(--blanco);
+        text-align: center;
+        font-weight: 200;
+        font-size: 14px;
+    }
+
+    .formulario {
+
+        .contenedor-inputs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+
+
+            input {
+                background-color: transparent;
+                border: none;
+                color: var(--blanco);
+                font-size: 14px;
+                margin-bottom: 20px;
+                border-bottom: 1px solid var(--blanco);
+                padding-bottom: 10px;
+                outline: none;
+                font-weight: 200;
+                width: 70%;
+                padding: 8px;
+                margin: 5px 0;
+                box-sizing: border-box;
+            }
+
+            input::placeholder {
+                opacity: 1;
+            }
+
+        }
+
+        .contenedor-checks {
+
+            .check-title {
+                color: var(--blanco);
+            }
+
+            .checkboxs {
+                display: flex;
+                align-items: center;
+                margin-top: -10px;
+                margin-bottom: 25px;
+
+                input[type="checkbox"] {
+                    appearance: none;
+                    width: 16px;
+                    height: 16px;
+                    background-color: var(--blanco);
+                    border: none;
+                    margin-right: 8px;
+                    cursor: pointer;
+                }
+
+                input[type="checkbox"]:checked {
+                    background-color: var(--rojo);
+                }
+
+                span {
+                    color: var(--blanco);
+                    font-size: 14px;
+                }
+            }
+
+        }
+    }
+
+    .contenedor-politicas {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .politicas-check {
+            display: flex;   
+            align-items: center;         
+
+            input[type="checkbox"] {
+                appearance: none;
+                width: 16px;
+                height: 16px;
+                background-color: var(--blanco);
+                border: none;
+                margin-right: 8px;
+                cursor: pointer;
+            }
+
+            input[type="checkbox"]:checked {
+                background-color: var(--rojo);
+            }
+
+            a {
+                color: var(--blanco);
+                font-size: 14px;
+            }
+        }
+
+        .politicas-button {
+            padding: 5px 30px;
+            background-color: var(--rojo);
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--blanco);
+            letter-spacing: 0.3em;
+        }
+    }
+}
+
+@media screen and (max-width:720px) {
+
+    .contenedor-formulario {
+           
+        .formulario {
+    
+            .contenedor-inputs {
+                grid-template-columns: repeat(1, 1fr);
+                margin-bottom: 30px;
+    
+    
+                input {
+                    width: 100%;
+                }
+    
+            }    
+            
+        }
+    
+        .contenedor-politicas {
+            align-items: flex-start;
+            flex-direction: column;
+    
+            .politicas-check {
+                margin-bottom: 25px; 
+            }
+    
+            .politicas-button {
+                width: 100%;
+            }
+        }
+    }
+    
+}

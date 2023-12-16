@@ -1,0 +1,29 @@
+@import url(/src/index.scss);
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--blanco);
+
+    .search-input {
+        background-color: transparent;
+        color: var(--blanco);
+        border: none;
+        outline: none;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    .search-icon {
+        color: var(--blanco-azulado);
+        margin-left: -15px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .navbar-search {
+        display: none;
+    }
+}

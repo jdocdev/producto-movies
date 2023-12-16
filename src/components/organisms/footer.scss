@@ -1,0 +1,44 @@
+@import url(/src/index.scss);
+
+.contenedor-footer {
+    margin-top: 50px;
+
+    .footer-secciones {
+
+
+        .footer-contacto {
+
+
+            .contacto-mediosPago {
+
+                text-align: center;
+                margin: 25px 0;
+
+                img {
+                    max-height: 35px;
+                    max-width: 100%;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid var(--gris-medio);
+                }
+
+            }
+
+        }
+
+        .footer-menu {
+
+            .footer-pie {
+                background-color: var(--rojo);
+
+                p {
+                    text-align: center;
+                    color: var(--blanco);
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding: 15px 0;
+                }
+            }
+        }
+    }
+}
+

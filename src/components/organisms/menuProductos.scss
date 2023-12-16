@@ -1,0 +1,18 @@
+@import url(/src/index.scss);
+
+.container-navbar {
+    background-color: var(--azul-orcuro);
+    box-shadow: 0 4px 4px rgba(0,0,0,.1);
+
+    .navbar {
+        margin: 0 auto;
+        padding: 0 30px;
+        max-width: 1530px;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--blanco);     
+
+    }
+}

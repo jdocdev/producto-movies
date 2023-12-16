@@ -1,0 +1,42 @@
+@import url(/src/index.scss);
+
+.container-productos {
+    margin: 40px 0 0 0;
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+
+
+    .producto {
+        max-width: 1530px;
+        display: flex;
+        justify-content: space-between;
+
+        .producto-galeria {
+            width: 60%;
+        }
+
+        .producto-detalles {
+            width: 40%;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .container-productos {
+
+        .producto {
+            flex-direction: column;
+
+
+            .producto-galeria {
+                width: 100%;
+            }
+
+            .producto-detalles {
+                margin-top: 25px;
+                width: 100%;
+            }
+        }
+    }
+}

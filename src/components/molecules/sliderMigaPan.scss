@@ -1,0 +1,19 @@
+@import url(/src/index.scss);
+
+.container-miga {
+
+    .miga {
+        font-size: 12px;
+        font-weight: 100;
+        color: var(--gris);
+
+        span {
+            font-weight: 600;
+            color: var(--negro);
+
+            .bi-house {
+                margin-right: 5px;
+            }
+        }
+    }
+}

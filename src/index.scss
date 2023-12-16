@@ -1,0 +1,27 @@
+:root {
+    --azul-orcuro: #131e29;
+    --azul: #0f3e99;
+    --blaco-azulado: #c6c6ca;
+    --blanco: #FFF;
+    --negro: #000;
+    --gris:#7e7e7e;
+    --gris-medio:#afb3b7;
+    --rojo:#ea0029;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+select,
+option {
+  font-family: 'Roboto Flex', sans-serif;
+}

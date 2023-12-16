@@ -1,0 +1,24 @@
+@import url(/src/index.scss);
+
+.container-infoEnvio {
+    display: flex;
+    justify-content: center;
+
+    .infoEnvio {
+        font-size: 12px;
+        font-weight: 100;
+        color: var(--gris);
+
+        span {
+            font-weight: 600;
+
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.container-infoEnvio p:nth-child(1) {
+    margin-right: 15px;
+}

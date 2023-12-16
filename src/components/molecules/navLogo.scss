@@ -1,0 +1,21 @@
+.navbar-logo {
+    .logo-link{
+        .link-img {
+            max-width: 115px;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 1030px) {
+
+    .navbar-logo {
+        .logo-link{
+            .link-img {
+                margin-left: 70px;
+                max-width: 115px;
+                height: auto;
+            }
+        }
+    }       
+}

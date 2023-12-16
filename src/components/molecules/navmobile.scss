@@ -1,0 +1,14 @@
+.container-navMobile {
+    display: none;
+}
+
+@media screen and (max-width: 1030px) {
+
+    .container-navMobile {
+            display: flex;
+
+        .bi-justify-left {
+            margin-right: 15px;
+        }
+    }       
+}
