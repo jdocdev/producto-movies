@@ -6,7 +6,9 @@ import NavMenuIcons from '../molecules/NavMenuIcons'
 import '/src/components/organisms/MenuProductos.scss'
 import NavMobile from '../molecules/NavMobile'
 
-const MenuProductos = () => {
+
+
+const MenuProductos = ({carrito, onResetCarrito}) => {
   return (
     <div className='container-navbar'>
       <div className='navbar'>
@@ -14,7 +16,7 @@ const MenuProductos = () => {
         <NavLogo />
         <Nav />
         <NavSearch />
-        <NavMenuIcons />
+        <NavMenuIcons carrito={carrito} onResetCarrito={onResetCarrito}/>
       </div>
     </div>
   )

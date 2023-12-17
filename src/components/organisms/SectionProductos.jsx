@@ -8,7 +8,10 @@ import SliderInfoEnvio from '../molecules/SliderInfoEnvio'
 import ProductoCaracteristicas from '../molecules/ProductoCaracteristicas'
 import ProductoDetalles from '../molecules/ProductoDetalles'
 
-const SectionProductos = () => {
+
+
+
+const SectionProductos = ({ onAgregarAlCarritoAbuelo }) => {
   return (
     <div className='container-productos'>
       <div className='producto'>
@@ -18,7 +21,7 @@ const SectionProductos = () => {
           <SliderInfoEnvio />
         </section>
         <section className='producto-detalles'>
-          <ProductoCaracteristicas />
+          <ProductoCaracteristicas onAgregarAlCarrito={onAgregarAlCarritoAbuelo} />
           <ProductoDetalles />
         </section>
       </div>
