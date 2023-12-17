@@ -1,5 +1,5 @@
 import '/src/components/molecules/navMobile.scss'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const NavMobile = () => {
 
@@ -8,6 +8,19 @@ const NavMobile = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
   }
+
+  const closeMenu = () => {
+    setMenuOpen(false)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', closeMenu)
+    window.addEventListener('resize', closeMenu)
+    return () => {
+      window.removeEventListener('scroll', closeMenu)
+      window.removeEventListener('resize', closeMenu)
+    }
+  }, [])
 
   return (
     <div className={`container-navMobile ${menuOpen ? 'open' : ''}`}>
