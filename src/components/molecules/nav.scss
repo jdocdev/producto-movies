@@ -3,11 +3,13 @@
 .navbar-nav {
     padding: 0 30px;
 
-    .nav-links{
+    position: relative;
+
+    .nav-links {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        list-style: none;   
+        list-style: none;
 
         li {
             display: flex;
@@ -15,6 +17,12 @@
             justify-content: center;
             text-align: center;
             padding: 0 50px;
+
+            position: relative;
+        }
+
+        li:hover .dropdown-content {
+            display: block;
         }
 
         .links-icono {
@@ -22,7 +30,7 @@
             margin-bottom: 4px;
         }
 
-        .links-link{
+        .links-link {
             text-decoration: none;
             text-transform: uppercase;
             font-weight: 600;
@@ -38,14 +46,66 @@
             font-size: 13px;
             color: var(--blanco-azulado);
         }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: var(--blanco);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            width: 200%;
+            padding: 15px 0;
+
+            p {
+                color: var(--rojo);
+                display: block;
+                text-align: start;
+                padding: 0px 25px;
+                font-size: 20px;
+                letter-spacing: 0.5em;
+                font-weight: 600;
+            }
+
+            a {
+                display: block;
+                text-align: start;
+                padding: 5px 25px;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 200;
+                color: var(--azul-orcuro);
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 10;
+                    width: 0;
+                    height: 1px;
+                    background-color: var(--rojo);
+                    transition: width 0.3s ease-in-out;
+                }
+
+                &:hover::before {
+                    width: 60%;
+                }
+
+
+            }
+
+
+        }
     }
 }
 
 @media screen and (max-width: 1360px) {
     .navbar-nav {
-    
-        .nav-links{ 
-    
+
+        .nav-links {
+
             li {
                 padding: 0 25px;
             }
@@ -55,9 +115,9 @@
 
 @media screen and (max-width: 1160px) {
     .navbar-nav {
-    
-        .nav-links{ 
-    
+
+        .nav-links {
+
             li {
                 padding: 0 10px;
             }
