@@ -3,7 +3,7 @@ import Nav from '../molecules/Nav'
 import NavSearch from '../molecules/NavSearch'
 import NavMenuIcons from '../molecules/NavMenuIcons'
 
-import '/src/components/organisms/MenuProductos.scss'
+import './menuProductos.scss'
 import NavMobile from '../molecules/NavMobile'
 
 

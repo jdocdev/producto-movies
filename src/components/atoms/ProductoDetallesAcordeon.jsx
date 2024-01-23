@@ -1,4 +1,4 @@
-import '/src/components/atoms/productoDetallesAcordeon.scss'
+import './productoDetallesAcordeon.scss'
 import { useState } from 'react';
 
 const ProductoDetallesAcordeon = ({ title, content }) => {

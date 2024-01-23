@@ -1,4 +1,4 @@
-import '/src/components/molecules/footerMenu.scss'
+import './footerMenu.scss'
 
 const FooterMenu = () => {
 

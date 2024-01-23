@@ -1,4 +1,4 @@
-import '/src/components/molecules/sliderMigaPan.scss'
+import './sliderMigaPan.scss'
 
 const SliderMigaPan = () => {
   return (

@@ -1,4 +1,4 @@
-import '/src/components/molecules/navSearch.scss'
+import './navSearch.scss'
 
 const NavSearch = () => {
     return (

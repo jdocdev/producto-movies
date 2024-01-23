@@ -1,6 +1,6 @@
-import '/src/components/organisms/bannerDescuentos.scss'
+import './bannerDescuentos.scss'
 
-import BannerPromos from '/src/img/banner-descuentos-diciembre.webp'
+import BannerPromos from '../../img/banner-descuentos-diciembre.webp'
 
 const BannerDescuentos = () => {
     return (

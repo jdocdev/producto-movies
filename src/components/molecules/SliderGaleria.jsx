@@ -1,4 +1,4 @@
-import '/src/components/molecules/sliderGaleria.scss'
+import './sliderGaleria.scss'
 
 import React, { useState } from 'react';
 

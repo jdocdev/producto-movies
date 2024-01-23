@@ -1,4 +1,4 @@
-import '/src/components/molecules/navMobile.scss'
+import './navMobile.scss'
 import { useState, useEffect } from 'react'
 
 const NavMobile = () => {

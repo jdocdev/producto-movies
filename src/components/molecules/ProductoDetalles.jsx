@@ -1,6 +1,6 @@
 import ProductoDetallesAcordeon from '../atoms/ProductoDetallesAcordeon'
-import '/src/components/molecules/productoDetalles.scss'
-import Credifin from '/src/img/logoBlanco_credifin.png'
+import './productoDetalles.scss'
+import Credifin from '../../img/logoBlanco_credifin.png'
 
 const ProductoDetalles = () => {
 

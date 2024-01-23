@@ -1,9 +1,9 @@
-import '/src/components/organisms/sectionProductos.scss'
+import './sectionProductos.scss'
 
 import SliderMigaPan from '../molecules/SliderMigaPan'
 import SliderGaleria from '../molecules/SliderGaleria'
 
-import imagenes from '/src/datos/imagenesProducto.json'
+import imagenes from '../../datos/imagenesProducto.json'
 import SliderInfoEnvio from '../molecules/SliderInfoEnvio'
 import ProductoCaracteristicas from '../molecules/ProductoCaracteristicas'
 import ProductoDetalles from '../molecules/ProductoDetalles'

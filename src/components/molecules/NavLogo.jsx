@@ -1,4 +1,4 @@
-import '/src/components/molecules/navLogo.scss'
+import './navLogo.scss'
 
 import MoviesLogo from '/src/img/movies-logo.svg'
 

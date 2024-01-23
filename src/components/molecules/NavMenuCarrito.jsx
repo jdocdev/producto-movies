@@ -1,5 +1,4 @@
-
-import '/src/components/molecules/navMenuCarrito.scss';
+import './navMenuCarrito.scss';
 
 const NavMenuCarrito = ({ carrito, onCloseCarrito, onResetCarrito }) => {
     const total = carrito.reduce((acc, producto) => acc + producto.precio * producto.cantidad, 0);

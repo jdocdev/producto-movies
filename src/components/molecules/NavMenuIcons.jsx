@@ -1,5 +1,5 @@
 import NavMenuCarrito from './NavMenuCarrito'
-import '/src/components/molecules/navMenuIcons.scss'
+import './navMenuIcons.scss'
 import { useState, useEffect } from 'react'
 
 const NavMenuIcons = ({ carrito, onResetCarrito }) => {

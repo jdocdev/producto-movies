@@ -1,8 +1,8 @@
 import FooterFormulario from '../molecules/FooterFormulario'
 import FooterIconosContacto from '../molecules/FooterIconosContacto'
 import FooterMenu from '../molecules/FooterMenu'
-import '/src/components/organisms/footer.scss'
-import MediosPago from '/src/img/medios-de-pago.png'
+import './footer.scss'
+import MediosPago from '../../img/medios-de-pago.png'
 
 const Footer = () => {
     return (

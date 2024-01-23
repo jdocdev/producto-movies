@@ -1,4 +1,4 @@
-import '/src/components/molecules/footerIconosContacto.scss'
+import './footerIconosContacto.scss'
 
 const FooterIconosContacto = () => {
     return (

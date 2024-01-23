@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import '/src/components/molecules/nav.scss'
+import './nav.scss'
 
-import MoviesIconoNav from '/src/img/movies-icono-nav.svg'
+import MoviesIconoNav from '../../img/movies-icono-nav.svg'
 
 const Nav = () => {
 

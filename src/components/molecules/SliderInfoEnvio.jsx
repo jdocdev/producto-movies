@@ -1,4 +1,4 @@
-import '/src/components/molecules/sliderInfoEnvio.scss'
+import './sliderInfoEnvio.scss'
 
 const SliderInfoEnvio = () => {
   return (

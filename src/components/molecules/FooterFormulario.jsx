@@ -1,4 +1,4 @@
-import '/src/components/molecules/footerFormulario.scss'
+import './footerFormulario.scss'
 
 const FooterFormulario = () => {
     return (

@@ -1,4 +1,4 @@
-import '/src/components/molecules/productoCaracteristicas.scss'
+import './productoCaracteristicas.scss'
 import { useState } from 'react'
 
 const ProductoCaracteristicas = ({ onAgregarAlCarrito }) => {
